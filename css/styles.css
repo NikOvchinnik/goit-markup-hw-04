@@ -121,6 +121,7 @@ img {
 
 .current {
   position: relative;
+  color: var(--hover-color);
 }
 
 .current::after {
@@ -351,6 +352,11 @@ img {
   justify-content: center;
 }
 
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--hover-color);
+}
+
 .team-socials-icon {
   fill: var(--secondary-color);
 }
@@ -386,6 +392,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+border: 1px solid var(--hover-color);
+}
+
+.customers-link:hover .customers-icon{
+  fill: var(--hover-color);
+}
+
+.customers-link:focus .customers-icon{
+  fill: var(--hover-color);
 }
 
 .customers-icon {
@@ -455,6 +474,11 @@ img {
   justify-content: center;
 }
 
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: #31D0AA;
+}
+
 .footer-socials-icon {
   fill: var(--secondary-color);
 }
@@ -510,7 +534,11 @@ img {
   overflow: hidden;
 }
 
-.works-img-container:hover .works-cover-text{
+.works-item:hover .works-cover-text{
+  transform: translateY(0%);
+}
+
+.works-link:focus .works-cover-text{
   transform: translateY(0%);
 }
 
